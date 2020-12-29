@@ -21,8 +21,8 @@ table {
   margin-left: 20px;
   }
   .clr:nth-child(even){
-    background-color: green;
+    background-color: lightblue;
   }
   .clr:nth-child(odd){
-    background-color: green;
+    background-color: lightblue;
   }

@@ -33,6 +33,20 @@ $(document).ready(function(){
            
         }*/
     });
-    $(document).on("click", ".edit")
+    $(document).on("click", ".edit", function(){
+        var oldprix = $(this).parent().prev().html();
+        var oldarticle = $(this).parent().prev().prev().html();
+
+        $(this).parent().prev().html("<input type='text' value='"+oldprix+"'>");
+        $(this).parent().prev().prev().html("<input type='text' value='"+oldarticle+"'>");
+        $(this).html("valider");
+        $(this).removeClass("edit");
+        $(this).addClass("valider")
+
+    });
+    $(document).on("click", ".valider", function(){
+        var x = $(this).parent().prev().html();
+        console.log(x);
+    });
 
 })
